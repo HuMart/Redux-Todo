@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class TodoList extends React.Comonent {
+class VisibleTodoList extends React.Component {
     render() {
         return(
             <div>
@@ -10,4 +10,4 @@ class TodoList extends React.Comonent {
         )
     }
 }
-export default TodoList;
+export default VisibleTodoList;
