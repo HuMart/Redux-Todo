@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Toggle = ({ active, children, onClick}) => {
     if (active) {
@@ -13,9 +14,14 @@ const Toggle = ({ active, children, onClick}) => {
               onClick();
           }}
         >
-        {children}
+          {children}
         </a>
     );
+};
+Toggle.propTypes = {
+  active: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default Toggle;
