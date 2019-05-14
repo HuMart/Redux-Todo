@@ -10,7 +10,7 @@ const store = createStore(todoApp)
 
 
 ReactDOM.render(
-<Provider store={todoApp}>
+<Provider store={store}>
     <App />
 </Provider>,document.getElementById('root'));
 

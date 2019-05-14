@@ -4,7 +4,7 @@ import Footer from './Footer'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
 
-// import './App.css';
+import './App.css';
 
 function App() {
   return (
