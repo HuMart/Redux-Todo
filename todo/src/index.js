@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import todoApp from './reducers'
+import todoApp from './reducers';
 
 const store = createStore(todoApp)
 

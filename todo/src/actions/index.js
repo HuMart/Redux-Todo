@@ -1,9 +1,9 @@
-const nextTodoId = 0;
+const addTodoId = 0;
 
-export const addTodo = text => {
+export const addTodos = text => {
     return {
         type: "ADD_TODO",
-        id: nextTodoId++,
+        id: addTodoId++,
         text
     };
 };
