@@ -1,9 +1,9 @@
-const addTodoId = 0;
+let addTodoId = 0;
 
-export const addTodos = text => {
+export const addTodo = text => {
     return {
         type: "ADD_TODO",
-        id: addTodoId++,
+        id: ++addTodoId,
         text
     };
 };

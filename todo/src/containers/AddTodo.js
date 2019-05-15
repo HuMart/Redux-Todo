@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addTodos } from '../actions';
+import { addTodo } from '../actions';
 
 let AddTodo = ({ dispatch }) => {
   let input;
@@ -13,7 +13,7 @@ let AddTodo = ({ dispatch }) => {
           if (!input.value.trim()) {
             return;
           }
-          dispatch(addTodos(input.value));
+          dispatch(addTodo(input.value));
           input.value = "";
         }}
       >
@@ -27,11 +27,11 @@ let AddTodo = ({ dispatch }) => {
     </div>
   );
 };
-const mapStateToProps = (state) => {
-  return {
-    state
-  } 
-}
-AddTodo = connect(mapStateToProps,  {})(AddTodo);
+// const mapStateToProps = (state) => {
+//   return {
+//     state
+//   } 
+// }
+AddTodo = connect()(AddTodo);
 
 export default AddTodo;
